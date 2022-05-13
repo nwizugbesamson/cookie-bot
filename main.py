@@ -3,16 +3,17 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import time
 
-
+# driver path as Service object
 service = Service("C:/Users/SAMSON/Documents/Development/chromedriver_win32/chromedriver.exe")
 
+#driver object
 driver = webdriver.Chrome(service=service)
 driver.get("https://orteil.dashnet.org/cookieclicker/")
 
 
 cookie = driver.find_element(By.ID, value="bigCookie")
 
-cookies = driver.find_element(By.CSS_SELECTOR, value='#cookies')
+#cookies = driver.find_element(By.CSS_SELECTOR, value='#cookies')
 upgrades = []
 
 
